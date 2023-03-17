@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.btn {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.5rem 1em;
+  color: blueviolet;
+  background-color: pink;
+  border: 10px solid blueviolet;
+  border-radius: 5px;
+
+  /* transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s; */
+
+  /* Short hand */
+  /* transition: transform 0.3s ease 0s; */
+  /* We dont need to specify the "timing-function" and the "transition-delay" because we are using the default values */
+
+  /* Applying transition to multiple values */
+  /* transition: transform 0.3s, background-color 0.3s, color 0.3s; */
+
+  /* We can apply to all the values  */
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  background-color: blueviolet;
+  color: white;
+}
